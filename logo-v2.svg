@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 82"
+     role="img" aria-label="Devji — Handcrafted in Bahrain">
+  <title>Devji</title>
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&amp;family=Jost:wght@300;400&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- ── TOP RULE ── -->
+  <line x1="50" y1="16" x2="260" y2="16"
+        stroke="#C9A84C" stroke-width="0.6" opacity="0.7"/>
+
+  <!-- ── WORDMARK — D slightly larger, EVJI in lighter weight ── -->
+  <!-- D: larger, anchored weight -->
+  <text x="66" y="53"
+        font-family="'Cormorant Garamond', 'Palatino Linotype', Georgia, serif"
+        font-size="44"
+        font-weight="400"
+        fill="#F2E8D0"
+        letter-spacing="0">D</text>
+
+  <!-- EVJI: lighter, same baseline, wider spacing -->
+  <text x="98" y="53"
+        font-family="'Cormorant Garamond', 'Palatino Linotype', Georgia, serif"
+        font-size="32"
+        font-weight="300"
+        fill="#F2E8D0"
+        letter-spacing="9">EVJI</text>
+
+  <!-- ── BOTTOM RULE ── -->
+  <line x1="50" y1="61" x2="260" y2="61"
+        stroke="#C9A84C" stroke-width="0.6" opacity="0.7"/>
+
+  <!-- ── ORNAMENT + TAGLINE ── -->
+  <!-- Left diamond ornament -->
+  <polygon points="94,72 97,69 100,72 97,75"
+           fill="#C9A84C" opacity="0.65"/>
+
+  <!-- Tagline -->
+  <text x="155" y="75.5"
+        font-family="'Jost', 'Helvetica Neue', Arial, sans-serif"
+        font-size="6.5"
+        font-weight="400"
+        fill="#A09078"
+        letter-spacing="4"
+        text-anchor="middle">BAHRAIN</text>
+
+  <!-- Right diamond ornament -->
+  <polygon points="210,72 213,69 216,72 213,75"
+           fill="#C9A84C" opacity="0.65"/>
+
+</svg>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 70"
+     role="img" aria-label="Devji — Handcrafted in Bahrain">
+  <title>Devji</title>
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&amp;family=Jost:wght@300;400&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- ── GEM MARK — faceted diamond, centered at (28, 35) ── -->
+
+  <!-- Facet: top — brightest, catches light -->
+  <polygon points="28,11 50,35 28,35" fill="#C9A84C" opacity="0.92"/>
+  <!-- Facet: right — mid shadow -->
+  <polygon points="50,35 28,59 28,35" fill="#C9A84C" opacity="0.40"/>
+  <!-- Facet: bottom — deepest shadow -->
+  <polygon points="28,59 6,35  28,35" fill="#C9A84C" opacity="0.62"/>
+  <!-- Facet: left — mid light -->
+  <polygon points="6,35  28,11 28,35" fill="#C9A84C" opacity="0.72"/>
+
+  <!-- Outer diamond stroke -->
+  <polygon points="28,11 50,35 28,59 6,35"
+           fill="none" stroke="#C9A84C" stroke-width="0.75" opacity="0.85"/>
+
+  <!-- Girdle line — subtle, adds depth -->
+  <line x1="6" y1="35" x2="50" y2="35"
+        stroke="#C9A84C" stroke-width="0.4" opacity="0.28"/>
+
+  <!-- ── WORDMARK ── -->
+  <text x="64" y="38"
+        font-family="'Cormorant Garamond', 'Palatino Linotype', Georgia, serif"
+        font-size="27"
+        font-weight="400"
+        fill="#F2E8D0"
+        letter-spacing="5.5">DEVJI</text>
+
+  <!-- Hairline rule beneath wordmark -->
+  <line x1="64" y1="46" x2="216" y2="46"
+        stroke="#C9A84C" stroke-width="0.5" opacity="0.45"/>
+
+  <!-- Tagline -->
+  <text x="65" y="57"
+        font-family="'Jost', 'Helvetica Neue', Arial, sans-serif"
+        font-size="6.8"
+        font-weight="400"
+        fill="#A09078"
+        letter-spacing="3.2">HANDCRAFTED · BAHRAIN</text>
+
+</svg>

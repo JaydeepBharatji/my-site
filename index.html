@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Devji Kuwait — Handcrafted gold jewellery from Bahrain. Coming to The Avenues Mall, Kuwait. Book your appointment." />
+  <title>Devji Kuwait — The Avenues Mall</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════ NAV -->
+  <nav id="nav" role="navigation" aria-label="Main navigation">
+    <a href="#" class="nav-logo" aria-label="Devji home">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 70" height="36" role="img" aria-label="Devji — Handcrafted in Bahrain">
+        <polygon points="28,11 50,35 28,35" fill="#C9A84C" opacity="0.92"/>
+        <polygon points="50,35 28,59 28,35" fill="#C9A84C" opacity="0.40"/>
+        <polygon points="28,59 6,35  28,35" fill="#C9A84C" opacity="0.62"/>
+        <polygon points="6,35  28,11 28,35" fill="#C9A84C" opacity="0.72"/>
+        <polygon points="28,11 50,35 28,59 6,35" fill="none" stroke="#C9A84C" stroke-width="0.75" opacity="0.85"/>
+        <line x1="6" y1="35" x2="50" y2="35" stroke="#C9A84C" stroke-width="0.4" opacity="0.28"/>
+        <text x="64" y="38" font-family="'Cormorant Garamond', Georgia, serif" font-size="27" font-weight="400" fill="#F2E8D0" letter-spacing="5.5">DEVJI</text>
+        <line x1="64" y1="46" x2="216" y2="46" stroke="#C9A84C" stroke-width="0.5" opacity="0.45"/>
+        <text x="65" y="57" font-family="'Jost', Helvetica, sans-serif" font-size="6.8" font-weight="400" fill="#A09078" letter-spacing="3.2">HANDCRAFTED · BAHRAIN</text>
+      </svg>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#about">Heritage</a></li>
+      <li><a href="#kuwait">Kuwait</a></li>
+      <li><a href="#appointments">Appointments</a></li>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#booking" class="btn btn-outline nav-cta">Book Now</a></li>
+    </ul>
+
+    <button class="nav-hamburger" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav-mobile" id="mobileNav" role="dialog" aria-label="Mobile navigation">
+    <button class="nav-close" id="navClose" aria-label="Close menu">✕</button>
+    <a href="#about" class="nav-mobile-link">Heritage</a>
+    <a href="#kuwait" class="nav-mobile-link">Kuwait</a>
+    <a href="#appointments" class="nav-mobile-link">Appointments</a>
+    <a href="#collections" class="nav-mobile-link">Collections</a>
+    <a href="#booking" class="nav-mobile-link">Book Now</a>
+  </div>
+
+
+  <!-- ═══════════════════════════════════ HERO -->
+  <section id="hero" aria-label="Hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-grain" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-line"></span>
+          <span class="label">Bahrain · GCC · Kuwait</span>
+        </div>
+
+        <h1 class="display-xl hero-headline">
+          Crafted in Bahrain.<br />
+          <em>Coming to Kuwait.</em>
+        </h1>
+
+        <p class="lead hero-sub">
+          For over five decades, Devji has shaped gold by hand — for families, for milestones, for moments that stay. The Avenues Mall, Kuwait. Opening June 2026.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#booking" class="btn btn-primary">
+            <span>Book Your Appointment</span>
+          </a>
+          <a href="#collections" class="btn btn-ghost">Explore the Collection</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="availability-card">
+          <span class="label availability-label">Next Available Appointment</span>
+          <div class="availability-date" id="nextAvailableDate">—</div>
+          <p class="availability-sub">The Avenues Mall, Kuwait</p>
+        </div>
+
+        <div class="hero-opening">
+          <p class="display-md">Opening<br /><span>June 2026</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="hero-scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════ ABOUT -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-left reveal">
+          <div class="about-number" aria-hidden="true">01</div>
+          <span class="label">Heritage</span>
+          <span class="gold-rule" style="margin-top:1rem"></span>
+          <h2 class="display-lg" id="about-heading">Where Every<br />Piece Begins</h2>
+        </div>
+
+        <div class="about-right">
+          <p class="lead reveal reveal-delay-1">
+            Devji was not built on import catalogues or mass production lines. It was built on craft — the kind that begins in Bahrain, moves through the hands of skilled artisans, and ends as something you hand down.
+          </p>
+          <p class="reveal reveal-delay-2">
+            Gold jewellery is our foundation. Handcrafted, considered, and made to last beyond the occasion it marks. Across the GCC, families have walked into a Devji store at the most significant moments of their lives — an engagement, a wedding, a birth, a milestone — and walked out with something that holds that memory.
+          </p>
+          <p class="reveal reveal-delay-3">
+            That tradition is coming to Kuwait.
+          </p>
+
+          <div class="about-quote reveal reveal-delay-4">
+            <p>
+              "Handcrafted gold jewellery is not made in a hurry. The pace of the work is part of what makes it worth keeping."
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════ DEVJI IN KUWAIT -->
+  <section id="kuwait" aria-labelledby="kuwait-heading">
+    <div class="container">
+      <div class="kuwait-inner">
+
+        <div class="kuwait-visual reveal">
+          <div class="kuwait-visual-text">
+            <p class="display-lg">The Avenues</p>
+            <p>Kuwait City · 2026</p>
+          </div>
+        </div>
+
+        <div class="kuwait-detail">
+          <div class="reveal">
+            <span class="label">Devji in Kuwait</span>
+            <span class="gold-rule" style="margin-top:1rem"></span>
+            <h2 class="display-lg" id="kuwait-heading">A New Chapter<br />at The Avenues</h2>
+          </div>
+
+          <p class="lead reveal reveal-delay-1">
+            Kuwait has always been part of our world. The Gulf's discerning buyers — Kuwaiti families, expatriate communities, those who know the difference between gold that is made and gold that is manufactured — have long been our kind of client.
+          </p>
+          <p class="reveal reveal-delay-2">
+            The Avenues Mall boutique is a consultation space. Appointments are how we work here — because handcrafted jewellery deserves a conversation, not a counter.
+          </p>
+
+          <div class="kuwait-stats reveal reveal-delay-3" style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-top:1rem;">
+            <div class="kuwait-stat">
+              <strong>The Avenues</strong>
+              <span>Location</span>
+            </div>
+            <div class="kuwait-stat">
+              <strong>June 2026</strong>
+              <span>Opening</span>
+            </div>
+            <div class="kuwait-stat">
+              <strong>By Appointment</strong>
+              <span>Access</span>
+            </div>
+            <div class="kuwait-stat">
+              <strong>10am – 10pm</strong>
+              <span>Daily Hours</span>
+            </div>
+          </div>
+
+          <div class="reveal reveal-delay-4" style="margin-top:1rem;">
+            <a href="#booking" class="btn btn-outline">Reserve Your Visit</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════ APPOINTMENTS -->
+  <section id="appointments" aria-labelledby="appointments-heading">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="label">Three Ways to Begin</span>
+        <span class="gold-rule" style="margin-top:1rem"></span>
+        <h2 class="display-lg" id="appointments-heading">Choose Your<br />Appointment</h2>
+      </div>
+
+      <div class="slots-bar reveal">
+        <span class="slots-label">Available Slots —</span>
+        <span class="slot-chip">10:00</span>
+        <span class="slot-chip">11:45</span>
+        <span class="slot-chip">13:30</span>
+        <span class="slot-chip">15:15</span>
+        <span class="slot-chip">17:00</span>
+        <span class="slot-chip">18:45</span>
+      </div>
+
+      <div class="appointments-grid">
+
+        <div class="appt-card reveal">
+          <span class="appt-number">I.</span>
+          <h3 class="appt-title">Jewellery Consultation</h3>
+          <p class="appt-desc">
+            You have something in mind — a style, an occasion, a feeling. Bring it. Our consultants work through the handcrafted gold collection with you. Ninety minutes. One room. Your full attention.
+          </p>
+          <div class="appt-outcome">
+            <span class="appt-outcome-label">What You Leave With</span>
+            <p>The right piece, or the confidence to return when ready.</p>
+          </div>
+        </div>
+
+        <div class="appt-card reveal reveal-delay-2">
+          <span class="appt-number">II.</span>
+          <h3 class="appt-title">Bridal Consultation</h3>
+          <p class="appt-desc">
+            A bridal set is not a purchase. It is a decision. We take every piece — ring, earrings, necklace, bangles — one at a time, in one sitting. Bring whoever needs to be present.
+          </p>
+          <div class="appt-outcome">
+            <span class="appt-outcome-label">What You Leave With</span>
+            <p>A confirmed selection or a detailed shortlist, ready for the next conversation.</p>
+          </div>
+        </div>
+
+        <div class="appt-card reveal reveal-delay-3">
+          <span class="appt-number">III.</span>
+          <h3 class="appt-title">Custom Design</h3>
+          <p class="appt-desc">
+            An idea in your head that does not exist in any collection. Describe it. Sketch it. Show us a reference. Our team takes your brief back to Bahrain and returns with a design made entirely for you.
+          </p>
+          <div class="appt-outcome">
+            <span class="appt-outcome-label">What You Leave With</span>
+            <p>A design brief, a timeline, and a piece no one else owns.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="appointments-footer reveal">
+        <div class="next-available">
+          <span class="next-available-label">Next Available</span>
+          <span class="next-available-date" id="nextAvailableDateAppt">—</span>
+        </div>
+        <a href="#booking" class="btn btn-primary">
+          <span>Book Your Appointment</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════ COLLECTIONS -->
+  <section id="collections" aria-labelledby="collections-heading">
+    <div class="container container--wide">
+
+      <div class="section-header reveal" style="padding: 0 clamp(1.5rem, 5vw, 4rem);">
+        <span class="label">The Work</span>
+        <span class="gold-rule" style="margin-top:1rem"></span>
+        <h2 class="display-lg" id="collections-heading">Our Collections</h2>
+        <p style="max-width:480px; margin-top:1rem;">
+          Handcrafted gold jewellery, designed and made in Bahrain. From everyday pieces to occasions that call for more.
+        </p>
+      </div>
+
+      <!-- SETUP: Replace collection-tile-img divs with real <img> tags once photography is ready -->
+      <div class="collections-grid reveal">
+        <div class="collection-tile collection-tile--gold">
+          <div class="collection-tile-img" aria-hidden="true"></div>
+          <div class="collection-tile-content">
+            <div class="collection-tile-name">Gold</div>
+            <div class="collection-tile-sub">Handcrafted · Bahrain</div>
+          </div>
+        </div>
+        <div class="collection-tile collection-tile--pearl">
+          <div class="collection-tile-img" aria-hidden="true"></div>
+          <div class="collection-tile-content">
+            <div class="collection-tile-name">Pearl</div>
+            <div class="collection-tile-sub">Heritage · Gulf</div>
+          </div>
+        </div>
+        <div class="collection-tile collection-tile--diamond">
+          <div class="collection-tile-img" aria-hidden="true"></div>
+          <div class="collection-tile-content">
+            <div class="collection-tile-name">Diamond</div>
+            <div class="collection-tile-sub">Premium · Occasion</div>
+          </div>
+        </div>
+        <div class="collection-tile collection-tile--bridal">
+          <div class="collection-tile-img" aria-hidden="true"></div>
+          <div class="collection-tile-content">
+            <div class="collection-tile-name">Bridal</div>
+            <div class="collection-tile-sub">Complete Sets · Custom</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- TESTIMONIALS: Section hidden until real client quotes are sourced from Bahrain/GCC stores. Do not restore placeholder text. -->
+
+
+  <!-- ═══════════════════════════════════ BOOKING -->
+  <section id="booking" aria-labelledby="booking-heading">
+    <div class="container">
+
+      <div class="booking-grid">
+
+        <div class="booking-info reveal">
+          <span class="label">Reserve Your Appointment</span>
+          <span class="gold-rule" style="margin-top:1rem"></span>
+          <h2 class="display-lg" id="booking-heading">Your Appointment<br />is Waiting</h2>
+          <p class="lead" style="margin-top:1.5rem;">
+            Fill in the form and we will confirm your appointment within 24 hours. Kindly note that all appointments are subject to availability.
+          </p>
+          <p>
+            For urgent enquiries or to speak directly with our team, please call or write to us.
+          </p>
+
+          <div class="booking-details">
+            <div class="booking-detail-row">
+              <span class="label">Location</span>
+              <span>The Avenues Mall, Kuwait</span>
+            </div>
+            <div class="booking-detail-row">
+              <span class="label">Hours</span>
+              <span>10:00 AM – 10:00 PM, Daily</span>
+            </div>
+            <div class="booking-detail-row">
+              <span class="label">Email</span>
+              <span>appointments.kuwait@devji.com</span>
+            </div>
+            <div class="booking-detail-row">
+              <span class="label">Next Available</span>
+              <span id="nextAvailableDateForm" style="font-family:var(--serif); font-size:1.05rem; color:var(--gold-pale);">—</span>
+            </div>
+          </div>
+
+          <div style="margin-top:2.5rem; display:flex; gap:1rem; flex-wrap:wrap;">
+            <a href="https://maps.google.com/?q=The+Avenues+Mall+Kuwait+City" target="_blank" rel="noopener" class="btn btn-outline">Plan a Store Visit</a>
+            <!-- SETUP: Replace +96500000000 with actual Kuwait store number -->
+            <a href="tel:+96500000000" class="btn btn-ghost">Call Us</a>
+          </div>
+        </div>
+
+        <div class="booking-form-wrap reveal reveal-delay-2">
+          <form id="bookingForm" novalidate>
+            <div class="form-grid">
+
+              <div class="form-field">
+                <label class="form-label" for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" class="form-input" placeholder="Your first name" required />
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" class="form-input" placeholder="Your last name" required />
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required />
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+965 XXXX XXXX" required />
+              </div>
+
+              <div class="form-field form-grid--full">
+                <label class="form-label" for="apptType">Appointment Type</label>
+                <select id="apptType" name="apptType" class="form-select" required>
+                  <option value="" disabled selected>Select an appointment type</option>
+                  <option value="jewellery">Jewellery Consultation</option>
+                  <option value="bridal">Bridal Consultation</option>
+                  <option value="custom">Custom Design</option>
+                </select>
+              </div>
+
+              <div class="form-field form-grid--full">
+                <label class="form-label" for="preferredDate">Preferred Date</label>
+                <input type="date" id="preferredDate" name="preferredDate" class="form-input" required />
+              </div>
+
+              <div class="form-field form-grid--full">
+                <label class="form-label" for="message">Any additional details</label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Tell us about the occasion, what you have in mind, or any questions you have."></textarea>
+              </div>
+
+            </div>
+
+            <div class="form-submit">
+              <p class="form-note">We will confirm within 24 hours.</p>
+              <button type="submit" class="btn btn-primary">
+                <span>Request Appointment</span>
+              </button>
+            </div>
+          </form>
+
+          <div class="form-success" id="formSuccess">
+            <h3>Your request has been received.</h3>
+            <p>We will confirm your appointment at appointments.kuwait@devji.com within 24 hours. Looking forward to welcoming you.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════ FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+
+        <div>
+          <div class="footer-brand">DEVJI<span>.</span></div>
+          <!-- SETUP: Replace with actual founding year once confirmed, eg: Est. 1971 -->
+          <div class="footer-tagline">Handcrafted in Bahrain · Bhaskar Devji Co WLL</div>
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="#about">Heritage</a></li>
+          <li><a href="#appointments">Appointments</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#booking">Book</a></li>
+          <!-- SETUP: Replace href with actual Instagram handle -->
+          <li><a href="https://instagram.com/devjijewellery" target="_blank" rel="noopener" aria-label="Devji on Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle; margin-right:4px;"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            Instagram
+          </a></li>
+        </ul>
+
+        <p class="footer-copy">© 2026 Bhaskar Devji Co WLL. All rights reserved.</p>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════ CHATBOT -->
+
+  <!-- Dual launcher buttons -->
+  <div class="chat-launchers" id="chatLaunchers">
+    <button class="chat-launcher chat-launcher--proposal" id="proposalFab" aria-label="Get a proposal" aria-expanded="false">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+        <polyline points="14 2 14 8 20 8"/>
+        <line x1="16" y1="13" x2="8" y2="13"/>
+        <line x1="16" y1="17" x2="8" y2="17"/>
+        <polyline points="10 9 9 9 8 9"/>
+      </svg>
+      <span>Get Proposal</span>
+    </button>
+    <button class="chat-launcher chat-launcher--chat" id="chatFab" aria-label="Ask me anything" aria-expanded="false">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      </svg>
+      <span>Ask me anything</span>
+    </button>
+  </div>
+
+  <!-- Chat panel -->
+  <div class="chat-panel" id="chatPanel" role="dialog" aria-label="Devji appointment assistant" aria-hidden="true">
+
+    <div class="chat-header">
+      <!-- Gem mark (matches nav logo) -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="28" height="28" aria-hidden="true">
+        <polygon points="22,4 40,22 22,22" fill="#C9A84C" opacity="0.92"/>
+        <polygon points="40,22 22,40 22,22" fill="#C9A84C" opacity="0.40"/>
+        <polygon points="22,40 4,22  22,22" fill="#C9A84C" opacity="0.62"/>
+        <polygon points="4,22  22,4  22,22" fill="#C9A84C" opacity="0.72"/>
+        <polygon points="22,4 40,22 22,40 4,22" fill="none" stroke="#C9A84C" stroke-width="0.8"/>
+      </svg>
+      <div class="chat-header-text">
+        <span class="chat-header-name">Devji</span>
+        <span class="chat-header-sub">Appointment Assistant</span>
+      </div>
+      <button class="chat-header-close" id="chatClose" aria-label="Close chat">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="chat-messages" id="chatMessages" aria-live="polite" aria-atomic="false"></div>
+
+    <div class="chat-suggestions" id="chatSuggestions">
+      <button class="chat-suggestion" data-msg="What appointment types do you offer?">Appointment types</button>
+      <button class="chat-suggestion" data-msg="When does the Kuwait store open?">Opening date</button>
+      <button class="chat-suggestion" data-msg="How do I book an appointment?">Book now</button>
+    </div>
+
+    <div class="chat-input-area">
+      <textarea id="chatInput"
+                class="chat-input"
+                placeholder="Ask about appointments…"
+                rows="1"
+                aria-label="Your message"></textarea>
+      <button class="chat-send" id="chatSend" aria-label="Send message">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="22" y1="2" x2="11" y2="13"/>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Proposal panel -->
+  <div class="proposal-panel" id="proposalPanel" role="dialog" aria-label="Get a proposal" aria-hidden="true">
+
+    <div class="proposal-header">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="26" height="26" aria-hidden="true">
+        <polygon points="22,4 40,22 22,22" fill="#C9A84C" opacity="0.92"/>
+        <polygon points="40,22 22,40 22,22" fill="#C9A84C" opacity="0.40"/>
+        <polygon points="22,40 4,22  22,22" fill="#C9A84C" opacity="0.62"/>
+        <polygon points="4,22  22,4  22,22" fill="#C9A84C" opacity="0.72"/>
+        <polygon points="22,4 40,22 22,40 4,22" fill="none" stroke="#C9A84C" stroke-width="0.8"/>
+      </svg>
+      <div class="chat-header-text">
+        <span class="proposal-header-name">Get a Proposal</span>
+        <span class="chat-header-sub">Tell us your situation</span>
+      </div>
+      <button class="chat-header-close" id="proposalClose" aria-label="Close proposal">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="proposal-progress" id="proposalProgress">
+      <div class="proposal-progress-track">
+        <div class="proposal-progress-fill" id="proposalProgressFill" style="width:0%"></div>
+      </div>
+      <span class="proposal-progress-label" id="proposalProgressLabel">Step 1 of 6</span>
+    </div>
+
+    <div class="proposal-messages" id="proposalMessages" aria-live="polite" aria-atomic="false"></div>
+
+    <div class="chat-input-area">
+      <textarea id="proposalInput"
+                class="chat-input"
+                placeholder="Type your answer…"
+                rows="1"
+                aria-label="Your answer"></textarea>
+      <button class="chat-send" id="proposalSend" aria-label="Send answer">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="22" y1="2" x2="11" y2="13"/>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- ═══════════════════════════════════ JS -->
+  <script>
+    // ── SETUP: Formspree ────────────────────────────────────
+    // 1. Go to https://formspree.io and create a free account
+    // 2. Create a new form, copy the form ID (eg: xpwzabcd)
+    // 3. Replace REPLACE_WITH_FORM_ID below
+    const FORMSPREE_ID = 'REPLACE_WITH_FORM_ID';
+
+    // ── Store opening date gate ──────────────────────────────
+    const OPENING_DATE = new Date('2026-06-01');
+    const isStoreOpen  = new Date() >= OPENING_DATE;
+
+    function getNextAvailableDate() {
+      const d = new Date();
+      d.setDate(d.getDate() + 2);
+      return d.toLocaleDateString('en-GB', {
+        weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
+      });
+    }
+
+    function getMinBookingDate() {
+      // Minimum is the later of (today + 2 days) or opening date
+      const twoAhead = new Date();
+      twoAhead.setDate(twoAhead.getDate() + 2);
+      const minDate = twoAhead > OPENING_DATE ? twoAhead : OPENING_DATE;
+      return minDate.toISOString().split('T')[0];
+    }
+
+    // ── Populate date fields ─────────────────────────────────
+    if (isStoreOpen) {
+      const nextDate = getNextAvailableDate();
+      document.getElementById('nextAvailableDate').textContent = nextDate;
+      document.getElementById('nextAvailableDateAppt').textContent = nextDate;
+      document.getElementById('nextAvailableDateForm').textContent = nextDate;
+    } else {
+      // Store not yet open — show pre-launch messaging
+      const preOpenMsg = 'Opening 1 June 2026';
+      document.getElementById('nextAvailableDate').textContent = preOpenMsg;
+      document.getElementById('nextAvailableDateAppt').textContent = preOpenMsg;
+      document.getElementById('nextAvailableDateForm').textContent = preOpenMsg;
+
+      // Update availability card label
+      const availLabel = document.querySelector('.availability-label');
+      if (availLabel) availLabel.textContent = 'Bookings Open';
+
+      // Update next-available label in appointments section
+      const apptLabel = document.querySelector('.next-available-label');
+      if (apptLabel) apptLabel.textContent = 'Appointments from';
+    }
+
+    const dateInput = document.getElementById('preferredDate');
+    dateInput.min = getMinBookingDate();
+
+    // ── Nav scroll behaviour ─────────────────────────────────
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // ── Mobile nav ───────────────────────────────────────────
+    const toggle    = document.getElementById('navToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    const navClose  = document.getElementById('navClose');
+
+    toggle.addEventListener('click', () => {
+      mobileNav.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      toggle.setAttribute('aria-expanded', 'true');
+    });
+
+    function closeMobileNav() {
+      mobileNav.classList.remove('open');
+      document.body.style.overflow = '';
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+
+    navClose.addEventListener('click', closeMobileNav);
+    document.querySelectorAll('.nav-mobile-link').forEach(link => {
+      link.addEventListener('click', closeMobileNav);
+    });
+
+    // ── Scroll reveal ────────────────────────────────────────
+    const reveals = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(el => revealObserver.observe(el));
+
+    // ── Booking form — Formspree submission ──────────────────
+    const form       = document.getElementById('bookingForm');
+    const successMsg = document.getElementById('formSuccess');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Client-side validation
+      const required = form.querySelectorAll('[required]');
+      let valid = true;
+      required.forEach(field => {
+        if (!field.value.trim()) {
+          field.style.borderColor = 'rgba(180, 80, 80, 0.6)';
+          field.style.background  = 'rgba(180, 80, 80, 0.04)';
+          valid = false;
+          field.addEventListener('input', () => {
+            field.style.borderColor = '';
+            field.style.background  = '';
+          }, { once: true });
+        }
+      });
+      if (!valid) return;
+
+      const btn = form.querySelector('[type="submit"]');
+      btn.querySelector('span').textContent = 'Sending…';
+      btn.disabled = true;
+
+      try {
+        const data = new FormData(form);
+        const res  = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+          method:  'POST',
+          body:    data,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (res.ok) {
+          form.style.display = 'none';
+          successMsg.classList.add('show');
+        } else {
+          // Fallback: open mailto if Formspree ID not yet configured
+          const fields  = Object.fromEntries(data.entries());
+          const subject = encodeURIComponent(`Appointment Request — ${fields.apptType || 'Devji Kuwait'}`);
+          const body    = encodeURIComponent(
+            `Name: ${fields.firstName} ${fields.lastName}\nEmail: ${fields.email}\nPhone: ${fields.phone}\nType: ${fields.apptType}\nDate: ${fields.preferredDate}\nMessage: ${fields.message || '—'}`
+          );
+          window.location.href = `mailto:appointments.kuwait@devji.com?subject=${subject}&body=${body}`;
+        }
+      } catch {
+        // Network error fallback — open mailto
+        btn.querySelector('span').textContent = 'Request Appointment';
+        btn.disabled = false;
+        window.location.href = 'mailto:appointments.kuwait@devji.com?subject=Appointment%20Request';
+      }
+    });
+    // ── SHARED HELPERS ────────────────────────────────────────
+    function makeTypingBubble(container) {
+      const wrap   = document.createElement('div');
+      wrap.className = 'chat-msg chat-msg--assistant chat-msg--typing';
+      const bubble = document.createElement('div');
+      bubble.className = 'chat-bubble chat-bubble--typing';
+      bubble.innerHTML = '<span></span><span></span><span></span>';
+      wrap.appendChild(bubble);
+      container.appendChild(wrap);
+      container.scrollTop = container.scrollHeight;
+      return wrap;
+    }
+
+    function appendMsgTo(container, role, text) {
+      const wrap   = document.createElement('div');
+      wrap.className = `chat-msg chat-msg--${role}`;
+      const bubble = document.createElement('div');
+      bubble.className = 'chat-bubble';
+      bubble.textContent = text;
+      wrap.appendChild(bubble);
+      container.appendChild(wrap);
+      container.scrollTop = container.scrollHeight;
+    }
+
+    function autoResize(textarea) {
+      textarea.style.height = 'auto';
+      textarea.style.height = Math.min(textarea.scrollHeight, 100) + 'px';
+    }
+
+    // ── Q&A CHAT WIDGET ───────────────────────────────────────
+    const chatHistory = [];
+
+    const chatLaunchers = document.getElementById('chatLaunchers');
+    const chatFab       = document.getElementById('chatFab');
+    const chatPanel     = document.getElementById('chatPanel');
+    const chatClose     = document.getElementById('chatClose');
+    const chatMessages  = document.getElementById('chatMessages');
+    const chatInput     = document.getElementById('chatInput');
+    const chatSend      = document.getElementById('chatSend');
+    const chatSugg      = document.getElementById('chatSuggestions');
+
+    let chatGreeted = false;
+    let chatBusy    = false;
+
+    function openChat() {
+      chatLaunchers.classList.add('chat-launchers--hidden');
+      chatPanel.setAttribute('aria-hidden', 'false');
+      chatPanel.classList.add('chat-panel--open');
+      chatFab.setAttribute('aria-expanded', 'true');
+      if (!chatGreeted) {
+        const greeting = 'Good day. I am the Devji appointment assistant. Kindly let me know how I can help — whether you have a question about our collections, our Kuwait boutique, or would like to book an appointment.';
+        appendMsgTo(chatMessages, 'assistant', greeting);
+        chatHistory.push({ role: 'assistant', content: greeting });
+        chatGreeted = true;
+      }
+      setTimeout(() => chatInput.focus(), 320);
+    }
+
+    function closeChat() {
+      chatPanel.setAttribute('aria-hidden', 'true');
+      chatPanel.classList.remove('chat-panel--open');
+      chatFab.setAttribute('aria-expanded', 'false');
+      chatLaunchers.classList.remove('chat-launchers--hidden');
+    }
+
+    chatFab.addEventListener('click', openChat);
+    chatClose.addEventListener('click', closeChat);
+
+    chatSugg.querySelectorAll('.chat-suggestion').forEach(btn => {
+      btn.addEventListener('click', () => {
+        chatSugg.style.display = 'none';
+        chatDispatch(btn.dataset.msg);
+      });
+    });
+
+    chatInput.addEventListener('input', () => autoResize(chatInput));
+    chatInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); chatHandleSend(); }
+    });
+    chatSend.addEventListener('click', chatHandleSend);
+
+    function chatHandleSend() {
+      const text = chatInput.value.trim();
+      if (!text || chatBusy) return;
+      chatSugg.style.display = 'none';
+      chatInput.value = '';
+      chatInput.style.height = 'auto';
+      chatDispatch(text);
+    }
+
+    async function chatDispatch(text) {
+      if (chatBusy) return;
+      chatBusy = true;
+      chatSend.disabled = true;
+
+      appendMsgTo(chatMessages, 'user', text);
+      chatHistory.push({ role: 'user', content: text });
+
+      const typingEl = makeTypingBubble(chatMessages);
+
+      try {
+        const res = await fetch('/api/chat', {
+          method:  'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body:    JSON.stringify({ messages: chatHistory })
+        });
+
+        typingEl.remove();
+
+        if (!res.ok) throw new Error(`status ${res.status}`);
+        const { reply } = await res.json();
+        const msg = reply || 'Kindly write to us at appointments.kuwait@devji.com and we will assist you directly.';
+        appendMsgTo(chatMessages, 'assistant', msg);
+        chatHistory.push({ role: 'assistant', content: msg });
+
+      } catch (err) {
+        typingEl.remove();
+        const fallback = 'I am unable to respond right now. Kindly write to us at appointments.kuwait@devji.com and we will assist you shortly.';
+        appendMsgTo(chatMessages, 'assistant', fallback);
+        console.error('Chat error:', err);
+      } finally {
+        chatBusy = false;
+        chatSend.disabled = false;
+        chatInput.focus();
+      }
+    }
+
+    // ── PROPOSAL WIDGET ───────────────────────────────────────
+    const proposalHistory = [];
+
+    const proposalFab      = document.getElementById('proposalFab');
+    const proposalPanel    = document.getElementById('proposalPanel');
+    const proposalClose    = document.getElementById('proposalClose');
+    const proposalMessages = document.getElementById('proposalMessages');
+    const proposalInput    = document.getElementById('proposalInput');
+    const proposalSend     = document.getElementById('proposalSend');
+    const progressFill     = document.getElementById('proposalProgressFill');
+    const progressLabel    = document.getElementById('proposalProgressLabel');
+
+    let proposalStarted  = false;
+    let proposalBusy     = false;
+    let proposalDone     = false;
+    let currentStep      = 0;
+
+    function setProgress(step) {
+      currentStep = step;
+      const pct = Math.round((step / 6) * 100);
+      progressFill.style.width = pct + '%';
+      progressLabel.textContent = 'Step ' + step + ' of 6';
+    }
+
+    function openProposal() {
+      chatLaunchers.classList.add('chat-launchers--hidden');
+      proposalPanel.setAttribute('aria-hidden', 'false');
+      proposalPanel.classList.add('proposal-panel--open');
+      proposalFab.setAttribute('aria-expanded', 'true');
+      if (!proposalStarted) {
+        proposalStarted = true;
+        proposalDispatch('I\'d like to get a proposal.');
+      }
+      setTimeout(() => proposalInput.focus(), 320);
+    }
+
+    function closeProposal() {
+      proposalPanel.setAttribute('aria-hidden', 'true');
+      proposalPanel.classList.remove('proposal-panel--open');
+      proposalFab.setAttribute('aria-expanded', 'false');
+      chatLaunchers.classList.remove('chat-launchers--hidden');
+    }
+
+    proposalFab.addEventListener('click', openProposal);
+    proposalClose.addEventListener('click', closeProposal);
+
+    proposalInput.addEventListener('input', () => autoResize(proposalInput));
+    proposalInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); proposalHandleSend(); }
+    });
+    proposalSend.addEventListener('click', proposalHandleSend);
+
+    function proposalHandleSend() {
+      const text = proposalInput.value.trim();
+      if (!text || proposalBusy || proposalDone) return;
+      proposalInput.value = '';
+      proposalInput.style.height = 'auto';
+      proposalDispatch(text);
+    }
+
+    async function proposalDispatch(text) {
+      if (proposalBusy) return;
+      proposalBusy = true;
+      proposalSend.disabled = true;
+
+      // Hide the trigger message; only show real user turns
+      if (text !== 'I\'d like to get a proposal.') {
+        appendMsgTo(proposalMessages, 'user', text);
+      }
+      proposalHistory.push({ role: 'user', content: text });
+
+      const typingEl = makeTypingBubble(proposalMessages);
+
+      try {
+        const res = await fetch('/api/chat', {
+          method:  'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body:    JSON.stringify({ messages: proposalHistory })
+        });
+
+        typingEl.remove();
+
+        if (!res.ok) throw new Error(`status ${res.status}`);
+        const data = await res.json();
+        const msg  = data.reply || 'Kindly write to us at appointments.kuwait@devji.com and we will assist you directly.';
+
+        appendMsgTo(proposalMessages, 'assistant', msg);
+        proposalHistory.push({ role: 'assistant', content: msg });
+
+        if (data.intake_step) {
+          setProgress(data.intake_step);
+        }
+
+        if (data.intake_complete) {
+          proposalDone = true;
+          proposalInput.disabled = true;
+          proposalSend.disabled  = true;
+          progressFill.style.width = '100%';
+          progressLabel.textContent = 'Complete';
+
+          // Fire and forget — agentic proposal engine
+          fetch('/api/generate-proposal', {
+            method:  'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body:    JSON.stringify({
+              intakeData:   data.intake_data,
+              conversation: proposalHistory
+            })
+          }).catch(err => console.error('generate-proposal error:', err));
+        }
+
+      } catch (err) {
+        typingEl.remove();
+        const fallback = 'Something went wrong — kindly write to us at appointments.kuwait@devji.com and we will assist you directly.';
+        appendMsgTo(proposalMessages, 'assistant', fallback);
+        console.error('Proposal error:', err);
+      } finally {
+        proposalBusy = false;
+        if (!proposalDone) {
+          proposalSend.disabled = false;
+          proposalInput.focus();
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>

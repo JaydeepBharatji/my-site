@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devji — Logo Options</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --gold:    #C9A84C;
+      --bg:      #0C0A07;
+      --cream:   #F2E8D0;
+      --muted:   #A09078;
+      --dark:    #1A1410;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #111009;
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      color: var(--cream);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── PAGE HEADER ── */
+    .page-header {
+      padding: 4rem clamp(2rem, 6vw, 6rem) 3rem;
+      border-bottom: 1px solid rgba(201,168,76,0.12);
+    }
+
+    .page-header-label {
+      font-size: 0.6rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 0.8rem;
+    }
+
+    .page-header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 400;
+      color: var(--cream);
+      margin-bottom: 0.6rem;
+    }
+
+    .page-header p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      max-width: 520px;
+      line-height: 1.7;
+    }
+
+    /* ── LOGO SECTION ── */
+    .logo-section {
+      padding: 4rem clamp(2rem, 6vw, 6rem);
+      border-bottom: 1px solid rgba(201,168,76,0.08);
+    }
+
+    .logo-section-header {
+      margin-bottom: 2.5rem;
+    }
+
+    .logo-section-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.9rem;
+      font-style: italic;
+      color: var(--gold);
+      opacity: 0.6;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    .logo-section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.3rem, 2vw, 1.7rem);
+      font-weight: 400;
+      color: var(--cream);
+      margin-bottom: 0.3rem;
+    }
+
+    .logo-section-desc {
+      font-size: 0.78rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+
+    /* ── COMPARISON GRID ── */
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: rgba(201,168,76,0.1);
+      border: 1px solid rgba(201,168,76,0.1);
+    }
+
+    .logo-cell {
+      padding: clamp(3rem, 5vw, 5rem) clamp(2rem, 4vw, 4rem);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2.5rem;
+      position: relative;
+    }
+
+    .logo-cell--dark  { background: #0C0A07; }
+    .logo-cell--mid   { background: #1C1810; }
+    .logo-cell--warm  { background: #F5EFE4; }
+    .logo-cell--white { background: #FFFFFF; }
+
+    .cell-label {
+      position: absolute;
+      top: 1rem;
+      left: 1.2rem;
+      font-size: 0.55rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .logo-cell--dark .cell-label,
+    .logo-cell--mid  .cell-label  { color: rgba(201,168,76,0.4); }
+    .logo-cell--warm .cell-label,
+    .logo-cell--white .cell-label { color: rgba(120,100,60,0.5); }
+
+    /* Logo display areas */
+    .logo-display {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 2rem 0;
+    }
+
+    /* Inline SVG color control per background */
+    .logo-cell--dark  svg .logo-text,
+    .logo-cell--mid   svg .logo-text { fill: #F2E8D0; }
+
+    .logo-cell--warm  svg .logo-text,
+    .logo-cell--white svg .logo-text { fill: #1A1410; }
+
+    .logo-cell--warm  svg .logo-muted,
+    .logo-cell--white svg .logo-muted { fill: #6B5040; }
+
+    /* Size variants row */
+    .size-row {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .size-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.6rem;
+    }
+
+    .size-item-label {
+      font-size: 0.55rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .logo-cell--dark .size-item-label,
+    .logo-cell--mid  .size-item-label  { color: rgba(201,168,76,0.35); }
+    .logo-cell--warm .size-item-label,
+    .logo-cell--white .size-item-label { color: rgba(120,100,60,0.45); }
+
+    /* ── USAGE NOTES ── */
+    .usage-section {
+      padding: 3rem clamp(2rem, 6vw, 6rem);
+    }
+
+    .usage-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .usage-card {
+      background: #141209;
+      border: 1px solid rgba(201,168,76,0.12);
+      padding: 1.8rem;
+    }
+
+    .usage-card-label {
+      font-size: 0.58rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 0.8rem;
+    }
+
+    .usage-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--cream);
+      margin-bottom: 0.6rem;
+    }
+
+    .usage-card p {
+      font-size: 0.78rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* ── FOOTER ── */
+    .page-footer {
+      padding: 2rem clamp(2rem, 6vw, 6rem);
+      border-top: 1px solid rgba(201,168,76,0.08);
+      font-size: 0.65rem;
+      color: #3A3020;
+      letter-spacing: 0.1em;
+    }
+
+    @media (max-width: 640px) {
+      .comparison-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <span class="page-header-label">Devji Kuwait — Brand Identity</span>
+    <h1>Logo Options</h1>
+    <p>Two directions for the Devji Kuwait mark. Both use the same gold palette as the website. Review each option on dark and light backgrounds before deciding.</p>
+  </header>
+
+
+  <!-- ═══ LOGO V1 ═══ -->
+  <section class="logo-section">
+    <div class="logo-section-header">
+      <span class="logo-section-number">Option 01</span>
+      <h2 class="logo-section-title">Mark & Wordmark</h2>
+      <p class="logo-section-desc">Geometric gem mark (faceted diamond) + spaced wordmark + heritage tagline. Works at all sizes.</p>
+    </div>
+
+    <div class="comparison-grid">
+
+      <!-- Dark background -->
+      <div class="logo-cell logo-cell--dark">
+        <span class="cell-label">On Dark</span>
+        <div class="logo-display">
+          <!-- Logo V1 inline SVG — dark version -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 70" height="70" role="img" aria-label="Devji logo">
+            <polygon points="28,11 50,35 28,35" fill="#C9A84C" opacity="0.92"/>
+            <polygon points="50,35 28,59 28,35" fill="#C9A84C" opacity="0.40"/>
+            <polygon points="28,59 6,35  28,35" fill="#C9A84C" opacity="0.62"/>
+            <polygon points="6,35  28,11 28,35" fill="#C9A84C" opacity="0.72"/>
+            <polygon points="28,11 50,35 28,59 6,35" fill="none" stroke="#C9A84C" stroke-width="0.75" opacity="0.85"/>
+            <line x1="6" y1="35" x2="50" y2="35" stroke="#C9A84C" stroke-width="0.4" opacity="0.28"/>
+            <text x="64" y="38" font-family="'Cormorant Garamond', Georgia, serif" font-size="27" font-weight="400" fill="#F2E8D0" letter-spacing="5.5">DEVJI</text>
+            <line x1="64" y1="46" x2="216" y2="46" stroke="#C9A84C" stroke-width="0.5" opacity="0.45"/>
+            <text x="65" y="57" font-family="'Jost', Helvetica, sans-serif" font-size="6.8" font-weight="400" fill="#A09078" letter-spacing="3.2">HANDCRAFTED · BAHRAIN</text>
+          </svg>
+        </div>
+
+        <!-- Size variants -->
+        <div class="size-row">
+          <div class="size-item">
+            <span class="size-item-label">Large</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 70" height="60">
+              <polygon points="28,11 50,35 28,35" fill="#C9A84C" opacity="0.92"/>
+              <polygon points="50,35 28,59 28,35" fill="#C9A84C" opacity="0.40"/>
+              <polygon points="28,59 6,35  28,35" fill="#C9A84C" opacity="0.62"/>
+              <polygon points="6,35  28,11 28,35" fill="#C9A84C" opacity="0.72"/>
+              <polygon points="28,11 50,35 28,59 6,35" fill="none" stroke="#C9A84C" stroke-width="0.75" opacity="0.85"/>
+              <line x1="6" y1="35" x2="50" y2="35" stroke="#C9A84C" stroke-width="0.4" opacity="0.28"/>
+              <text x="64" y="38" font-family="'Cormorant Garamond', Georgia, serif" font-size="27" font-weight="400" fill="#F2E8D0" letter-spacing="5.5">DEVJI</text>
+              <line x1="64" y1="46" x2="216" y2="46" stroke="#C9A84C" stroke-width="0.5" opacity="0.45"/>
+              <text x="65" y="57" font-family="'Jost', Helvetica, sans-serif" font-size="6.8" font-weight="400" fill="#A09078" letter-spacing="3.2">HANDCRAFTED · BAHRAIN</text>
+            </svg>
+          </div>
+          <div class="size-item">
+            <span class="size-item-label">Medium</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 70" height="40">
+              <polygon points="28,11 50,35 28,35" fill="#C9A84C" opacity="0.92"/>
+              <polygon points="50,35 28,59 28,35" fill="#C9A84C" opacity="0.40"/>
+              <polygon points="28,59 6,35  28,35" fill="#C9A84C" opacity="0.62"/>
+              <polygon points="6,35  28,11 28,35" fill="#C9A84C" opacity="0.72"/>
+              <polygon points="28,11 50,35 28,59 6,35" fill="none" stroke="#C9A84C" stroke-width="0.75" opacity="0.85"/>
+              <line x1="6" y1="35" x2="50" y2="35" stroke="#C9A84C" stroke-width="0.4" opacity="0.28"/>
+              <text x="64" y="38" font-family="'Cormorant Garamond', Georgia, serif" font-size="27" font-weight="400" fill="#F2E8D0" letter-spacing="5.5">DEVJI</text>
+              <line x1="64" y1="46" x2="216" y2="46" stroke="#C9A84C" stroke-width="0.5" opacity="0.45"/>
+              <text x="65" y="57" font-family="'Jost', Helvetica, sans-serif" font-size="6.8" font-weight="400" fill="#A09078" letter-spacing="3.2">HANDCRAFTED · BAHRAIN</text>
+            </svg>
+          </div>
+          <div class="size-item">
+            <span class="size-item-label">Small</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 70" height="24">
+              <polygon points="28,11 50,35 28,35" fill="#C9A84C" opacity="0.92"/>
+              <polygon points="50,35 28,59 28,35" fill="#C9A84C" opacity="0.40"/>
+              <polygon points="28,59 6,35  28,35" fill="#C9A84C" opacity="0.62"/>
+              <polygon points="6,35  28,11 28,35" fill="#C9A84C" opacity="0.72"/>
+              <polygon points="28,11 50,35 28,59 6,35" fill="none" stroke="#C9A84C" stroke-width="0.75" opacity="0.85"/>
+              <line x1="6" y1="35" x2="50" y2="35" stroke="#C9A84C" stroke-width="0.4" opacity="0.28"/>
+              <text x="64" y="38" font-family="'Cormorant Garamond', Georgia, serif" font-size="27" font-weight="400" fill="#F2E8D0" letter-spacing="5.5">DEVJI</text>
+              <line x1="64" y1="46" x2="216" y2="46" stroke="#C9A84C" stroke-width="0.5" opacity="0.45"/>
+              <text x="65" y="57" font-family="'Jost', Helvetica, sans-serif" font-size="6.8" font-weight="400" fill="#A09078" letter-spacing="3.2">HANDCRAFTED · BAHRAIN</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Light background -->
+      <div class="logo-cell logo-cell--warm">
+        <span class="cell-label">On Light</span>
+        <div class="logo-display">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 70" height="70" role="img" aria-label="Devji logo">
+            <polygon points="28,11 50,35 28,35" fill="#C9A84C" opacity="0.92"/>
+            <polygon points="50,35 28,59 28,35" fill="#C9A84C" opacity="0.40"/>
+            <polygon points="28,59 6,35  28,35" fill="#C9A84C" opacity="0.62"/>
+            <polygon points="6,35  28,11 28,35" fill="#C9A84C" opacity="0.72"/>
+            <polygon points="28,11 50,35 28,59 6,35" fill="none" stroke="#C9A84C" stroke-width="0.75" opacity="0.85"/>
+            <line x1="6" y1="35" x2="50" y2="35" stroke="#C9A84C" stroke-width="0.4" opacity="0.28"/>
+            <text x="64" y="38" font-family="'Cormorant Garamond', Georgia, serif" font-size="27" font-weight="400" fill="#1A1410" letter-spacing="5.5">DEVJI</text>
+            <line x1="64" y1="46" x2="216" y2="46" stroke="#C9A84C" stroke-width="0.5" opacity="0.55"/>
+            <text x="65" y="57" font-family="'Jost', Helvetica, sans-serif" font-size="6.8" font-weight="400" fill="#7A6048" letter-spacing="3.2">HANDCRAFTED · BAHRAIN</text>
+          </svg>
+        </div>
+
+        <div class="size-row">
+          <div class="size-item">
+            <span class="size-item-label">Large</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 70" height="60">
+              <polygon points="28,11 50,35 28,35" fill="#C9A84C" opacity="0.92"/>
+              <polygon points="50,35 28,59 28,35" fill="#C9A84C" opacity="0.40"/>
+              <polygon points="28,59 6,35  28,35" fill="#C9A84C" opacity="0.62"/>
+              <polygon points="6,35  28,11 28,35" fill="#C9A84C" opacity="0.72"/>
+              <polygon points="28,11 50,35 28,59 6,35" fill="none" stroke="#C9A84C" stroke-width="0.75" opacity="0.85"/>
+              <line x1="6" y1="35" x2="50" y2="35" stroke="#C9A84C" stroke-width="0.4" opacity="0.28"/>
+              <text x="64" y="38" font-family="'Cormorant Garamond', Georgia, serif" font-size="27" font-weight="400" fill="#1A1410" letter-spacing="5.5">DEVJI</text>
+              <line x1="64" y1="46" x2="216" y2="46" stroke="#C9A84C" stroke-width="0.5" opacity="0.55"/>
+              <text x="65" y="57" font-family="'Jost', Helvetica, sans-serif" font-size="6.8" font-weight="400" fill="#7A6048" letter-spacing="3.2">HANDCRAFTED · BAHRAIN</text>
+            </svg>
+          </div>
+          <div class="size-item">
+            <span class="size-item-label">Medium</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 70" height="40">
+              <polygon points="28,11 50,35 28,35" fill="#C9A84C" opacity="0.92"/>
+              <polygon points="50,35 28,59 28,35" fill="#C9A84C" opacity="0.40"/>
+              <polygon points="28,59 6,35  28,35" fill="#C9A84C" opacity="0.62"/>
+              <polygon points="6,35  28,11 28,35" fill="#C9A84C" opacity="0.72"/>
+              <polygon points="28,11 50,35 28,59 6,35" fill="none" stroke="#C9A84C" stroke-width="0.75" opacity="0.85"/>
+              <line x1="6" y1="35" x2="50" y2="35" stroke="#C9A84C" stroke-width="0.4" opacity="0.28"/>
+              <text x="64" y="38" font-family="'Cormorant Garamond', Georgia, serif" font-size="27" font-weight="400" fill="#1A1410" letter-spacing="5.5">DEVJI</text>
+              <line x1="64" y1="46" x2="216" y2="46" stroke="#C9A84C" stroke-width="0.5" opacity="0.55"/>
+              <text x="65" y="57" font-family="'Jost', Helvetica, sans-serif" font-size="6.8" font-weight="400" fill="#7A6048" letter-spacing="3.2">HANDCRAFTED · BAHRAIN</text>
+            </svg>
+          </div>
+          <div class="size-item">
+            <span class="size-item-label">Small</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 70" height="24">
+              <polygon points="28,11 50,35 28,35" fill="#C9A84C" opacity="0.92"/>
+              <polygon points="50,35 28,59 28,35" fill="#C9A84C" opacity="0.40"/>
+              <polygon points="28,59 6,35  28,35" fill="#C9A84C" opacity="0.62"/>
+              <polygon points="6,35  28,11 28,35" fill="#C9A84C" opacity="0.72"/>
+              <polygon points="28,11 50,35 28,59 6,35" fill="none" stroke="#C9A84C" stroke-width="0.75" opacity="0.85"/>
+              <line x1="6" y1="35" x2="50" y2="35" stroke="#C9A84C" stroke-width="0.4" opacity="0.28"/>
+              <text x="64" y="38" font-family="'Cormorant Garamond', Georgia, serif" font-size="27" font-weight="400" fill="#1A1410" letter-spacing="5.5">DEVJI</text>
+              <line x1="64" y1="46" x2="216" y2="46" stroke="#C9A84C" stroke-width="0.5" opacity="0.55"/>
+              <text x="65" y="57" font-family="'Jost', Helvetica, sans-serif" font-size="6.8" font-weight="400" fill="#7A6048" letter-spacing="3.2">HANDCRAFTED · BAHRAIN</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══ LOGO V2 ═══ -->
+  <section class="logo-section">
+    <div class="logo-section-header">
+      <span class="logo-section-number">Option 02</span>
+      <h2 class="logo-section-title">Typographic</h2>
+      <p class="logo-section-desc">No mark. Distinctive D-scale letterform contrast, gold horizontal rules, diamond ornaments. Confident and editorial.</p>
+    </div>
+
+    <div class="comparison-grid">
+
+      <!-- Dark background -->
+      <div class="logo-cell logo-cell--dark">
+        <span class="cell-label">On Dark</span>
+        <div class="logo-display">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 82" height="82" role="img" aria-label="Devji logo">
+            <line x1="50" y1="16" x2="260" y2="16" stroke="#C9A84C" stroke-width="0.6" opacity="0.7"/>
+            <text x="66" y="53" font-family="'Cormorant Garamond', Georgia, serif" font-size="44" font-weight="400" fill="#F2E8D0" letter-spacing="0">D</text>
+            <text x="98" y="53" font-family="'Cormorant Garamond', Georgia, serif" font-size="32" font-weight="300" fill="#F2E8D0" letter-spacing="9">EVJI</text>
+            <line x1="50" y1="61" x2="260" y2="61" stroke="#C9A84C" stroke-width="0.6" opacity="0.7"/>
+            <polygon points="94,72 97,69 100,72 97,75" fill="#C9A84C" opacity="0.65"/>
+            <text x="155" y="75.5" font-family="'Jost', Helvetica, sans-serif" font-size="6.5" font-weight="400" fill="#A09078" letter-spacing="4" text-anchor="middle">BAHRAIN</text>
+            <polygon points="210,72 213,69 216,72 213,75" fill="#C9A84C" opacity="0.65"/>
+          </svg>
+        </div>
+
+        <div class="size-row">
+          <div class="size-item">
+            <span class="size-item-label">Large</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 82" height="70">
+              <line x1="50" y1="16" x2="260" y2="16" stroke="#C9A84C" stroke-width="0.6" opacity="0.7"/>
+              <text x="66" y="53" font-family="'Cormorant Garamond', Georgia, serif" font-size="44" font-weight="400" fill="#F2E8D0">D</text>
+              <text x="98" y="53" font-family="'Cormorant Garamond', Georgia, serif" font-size="32" font-weight="300" fill="#F2E8D0" letter-spacing="9">EVJI</text>
+              <line x1="50" y1="61" x2="260" y2="61" stroke="#C9A84C" stroke-width="0.6" opacity="0.7"/>
+              <polygon points="94,72 97,69 100,72 97,75" fill="#C9A84C" opacity="0.65"/>
+              <text x="155" y="75.5" font-family="'Jost', Helvetica, sans-serif" font-size="6.5" font-weight="400" fill="#A09078" letter-spacing="4" text-anchor="middle">BAHRAIN</text>
+              <polygon points="210,72 213,69 216,72 213,75" fill="#C9A84C" opacity="0.65"/>
+            </svg>
+          </div>
+          <div class="size-item">
+            <span class="size-item-label">Medium</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 82" height="46">
+              <line x1="50" y1="16" x2="260" y2="16" stroke="#C9A84C" stroke-width="0.6" opacity="0.7"/>
+              <text x="66" y="53" font-family="'Cormorant Garamond', Georgia, serif" font-size="44" font-weight="400" fill="#F2E8D0">D</text>
+              <text x="98" y="53" font-family="'Cormorant Garamond', Georgia, serif" font-size="32" font-weight="300" fill="#F2E8D0" letter-spacing="9">EVJI</text>
+              <line x1="50" y1="61" x2="260" y2="61" stroke="#C9A84C" stroke-width="0.6" opacity="0.7"/>
+              <polygon points="94,72 97,69 100,72 97,75" fill="#C9A84C" opacity="0.65"/>
+              <text x="155" y="75.5" font-family="'Jost', Helvetica, sans-serif" font-size="6.5" font-weight="400" fill="#A09078" letter-spacing="4" text-anchor="middle">BAHRAIN</text>
+              <polygon points="210,72 213,69 216,72 213,75" fill="#C9A84C" opacity="0.65"/>
+            </svg>
+          </div>
+          <div class="size-item">
+            <span class="size-item-label">Small</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 82" height="28">
+              <line x1="50" y1="16" x2="260" y2="16" stroke="#C9A84C" stroke-width="0.6" opacity="0.7"/>
+              <text x="66" y="53" font-family="'Cormorant Garamond', Georgia, serif" font-size="44" font-weight="400" fill="#F2E8D0">D</text>
+              <text x="98" y="53" font-family="'Cormorant Garamond', Georgia, serif" font-size="32" font-weight="300" fill="#F2E8D0" letter-spacing="9">EVJI</text>
+              <line x1="50" y1="61" x2="260" y2="61" stroke="#C9A84C" stroke-width="0.6" opacity="0.7"/>
+              <polygon points="94,72 97,69 100,72 97,75" fill="#C9A84C" opacity="0.65"/>
+              <text x="155" y="75.5" font-family="'Jost', Helvetica, sans-serif" font-size="6.5" font-weight="400" fill="#A09078" letter-spacing="4" text-anchor="middle">BAHRAIN</text>
+              <polygon points="210,72 213,69 216,72 213,75" fill="#C9A84C" opacity="0.65"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Light background -->
+      <div class="logo-cell logo-cell--white">
+        <span class="cell-label">On Light</span>
+        <div class="logo-display">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 82" height="82" role="img" aria-label="Devji logo">
+            <line x1="50" y1="16" x2="260" y2="16" stroke="#C9A84C" stroke-width="0.6" opacity="0.8"/>
+            <text x="66" y="53" font-family="'Cormorant Garamond', Georgia, serif" font-size="44" font-weight="400" fill="#1A1410">D</text>
+            <text x="98" y="53" font-family="'Cormorant Garamond', Georgia, serif" font-size="32" font-weight="300" fill="#1A1410" letter-spacing="9">EVJI</text>
+            <line x1="50" y1="61" x2="260" y2="61" stroke="#C9A84C" stroke-width="0.6" opacity="0.8"/>
+            <polygon points="94,72 97,69 100,72 97,75" fill="#C9A84C" opacity="0.8"/>
+            <text x="155" y="75.5" font-family="'Jost', Helvetica, sans-serif" font-size="6.5" font-weight="400" fill="#8B6840" letter-spacing="4" text-anchor="middle">BAHRAIN</text>
+            <polygon points="210,72 213,69 216,72 213,75" fill="#C9A84C" opacity="0.8"/>
+          </svg>
+        </div>
+
+        <div class="size-row">
+          <div class="size-item">
+            <span class="size-item-label">Large</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 82" height="70">
+              <line x1="50" y1="16" x2="260" y2="16" stroke="#C9A84C" stroke-width="0.6" opacity="0.8"/>
+              <text x="66" y="53" font-family="'Cormorant Garamond', Georgia, serif" font-size="44" font-weight="400" fill="#1A1410">D</text>
+              <text x="98" y="53" font-family="'Cormorant Garamond', Georgia, serif" font-size="32" font-weight="300" fill="#1A1410" letter-spacing="9">EVJI</text>
+              <line x1="50" y1="61" x2="260" y2="61" stroke="#C9A84C" stroke-width="0.6" opacity="0.8"/>
+              <polygon points="94,72 97,69 100,72 97,75" fill="#C9A84C" opacity="0.8"/>
+              <text x="155" y="75.5" font-family="'Jost', Helvetica, sans-serif" font-size="6.5" font-weight="400" fill="#8B6840" letter-spacing="4" text-anchor="middle">BAHRAIN</text>
+              <polygon points="210,72 213,69 216,72 213,75" fill="#C9A84C" opacity="0.8"/>
+            </svg>
+          </div>
+          <div class="size-item">
+            <span class="size-item-label">Medium</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 82" height="46">
+              <line x1="50" y1="16" x2="260" y2="16" stroke="#C9A84C" stroke-width="0.6" opacity="0.8"/>
+              <text x="66" y="53" font-family="'Cormorant Garamond', Georgia, serif" font-size="44" font-weight="400" fill="#1A1410">D</text>
+              <text x="98" y="53" font-family="'Cormorant Garamond', Georgia, serif" font-size="32" font-weight="300" fill="#1A1410" letter-spacing="9">EVJI</text>
+              <line x1="50" y1="61" x2="260" y2="61" stroke="#C9A84C" stroke-width="0.6" opacity="0.8"/>
+              <polygon points="94,72 97,69 100,72 97,75" fill="#C9A84C" opacity="0.8"/>
+              <text x="155" y="75.5" font-family="'Jost', Helvetica, sans-serif" font-size="6.5" font-weight="400" fill="#8B6840" letter-spacing="4" text-anchor="middle">BAHRAIN</text>
+              <polygon points="210,72 213,69 216,72 213,75" fill="#C9A84C" opacity="0.8"/>
+            </svg>
+          </div>
+          <div class="size-item">
+            <span class="size-item-label">Small</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 82" height="28">
+              <line x1="50" y1="16" x2="260" y2="16" stroke="#C9A84C" stroke-width="0.6" opacity="0.8"/>
+              <text x="66" y="53" font-family="'Cormorant Garamond', Georgia, serif" font-size="44" font-weight="400" fill="#1A1410">D</text>
+              <text x="98" y="53" font-family="'Cormorant Garamond', Georgia, serif" font-size="32" font-weight="300" fill="#1A1410" letter-spacing="9">EVJI</text>
+              <line x1="50" y1="61" x2="260" y2="61" stroke="#C9A84C" stroke-width="0.6" opacity="0.8"/>
+              <polygon points="94,72 97,69 100,72 97,75" fill="#C9A84C" opacity="0.8"/>
+              <text x="155" y="75.5" font-family="'Jost', Helvetica, sans-serif" font-size="6.5" font-weight="400" fill="#8B6840" letter-spacing="4" text-anchor="middle">BAHRAIN</text>
+              <polygon points="210,72 213,69 216,72 213,75" fill="#C9A84C" opacity="0.8"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══ USAGE NOTES ═══ -->
+  <section class="usage-section">
+    <span class="page-header-label" style="display:block; margin-bottom:1rem;">Usage Notes</span>
+    <div class="usage-grid">
+      <div class="usage-card">
+        <span class="usage-card-label">Option 01 — Best For</span>
+        <h3>Website Nav & App Icons</h3>
+        <p>The gem mark works as a standalone favicon or app icon. The full lockup works well in the website header and on all collateral.</p>
+      </div>
+      <div class="usage-card">
+        <span class="usage-card-label">Option 02 — Best For</span>
+        <h3>Print, Signage & Packaging</h3>
+        <p>No icon dependency. The typographic treatment holds strong at large sizes — shopping bags, store fascia, certificates.</p>
+      </div>
+      <div class="usage-card">
+        <span class="usage-card-label">Colour System</span>
+        <h3>Gold Always. Text Adapts.</h3>
+        <p>Gold (#C9A84C) is fixed across all uses. Text is cream (#F2E8D0) on dark, near-black (#1A1410) on light.</p>
+      </div>
+      <div class="usage-card">
+        <span class="usage-card-label">Next Step</span>
+        <h3>Choose One Direction</h3>
+        <p>Confirm which option to carry forward. The chosen logo will be placed in the website header, favicon, and booking form.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="page-footer">
+    Devji Kuwait — Brand Identity Review · Prepared for Jaydeep Bharatji, Jt. Managing Director
+  </footer>
+
+</body>
+</html>
